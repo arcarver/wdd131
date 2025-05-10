@@ -1,0 +1,23 @@
+h1{
+    background-color: darkslategrey;
+    font: color white;
+}
+
+nav{
+    text-decoration: none;
+    background-color: black;
+    text: color white;
+}
+
+main{
+    display: flex;
+
+}
+p{
+    background-color: lightgray;
+}
+
+footer{
+    background-color: darkslategrey;
+        font: color white;
+}
