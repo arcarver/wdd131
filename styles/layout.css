@@ -1,18 +1,19 @@
-body{
+body {
     display: grid;
     grid-template: auto 1fr auto / 800px 1fr auto;
     width: auto;
 }
 
-header{
+header {
     grid-row: 1;
 }
-h1{
+
+h1 {
     background-color: darkslategrey;
     color: white;
 }
 
-nav{
+nav {
     text-decoration: none;
     background-color: black;
     color: white;
@@ -22,19 +23,22 @@ nav{
 
 }
 
-main{
+main {
     grid-row: 2;
     grid-template-columns: 1fr, 1fr;
 
 }
-p{
+
+p {
     background-color: lightgray;
     grid-column: 1;
 }
-section{
-    grid-column: 2;
+
+section {
+    grid-column: 1/2;
 }
-footer{
+
+footer {
     grid-row: 3;
     background-color: darkslategrey;
     color: white;
