@@ -1,16 +1,16 @@
 body {
     display: grid;
     grid-template-rows: 200px 500px 200px;
-    
+
     width: auto;
 }
 
 header {
     grid-row: 1;
     background-color: darkslategrey;
-    
-    
-    
+
+
+
 }
 
 h1 {
@@ -19,7 +19,7 @@ h1 {
 }
 
 nav {
-    
+
     background-color: white;
     align-items: end;
     padding: 2px;
@@ -28,10 +28,10 @@ nav {
 ul {
     display: flex;
     justify-content: space-around;
-    
+
     text-decoration: none;
     color: white;
-}   
+}
 
 main {
 
