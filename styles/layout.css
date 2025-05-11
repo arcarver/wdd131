@@ -14,23 +14,24 @@ header {
 }
 
 h1 {
-    margin-bottom: 88px;
+    margin-bottom: 100px;
     color: white;
 }
 
 nav {
-
+    display: flex;
     background-color: white;
     align-items: end;
-    padding: 2px;
+    justify-content: space-around;
+    padding: 12px;
 }
 
-ul {
-    display: flex;
-    justify-content: space-around;
+a {
+    /* display: flex; */
+    /* justify-items: space-around; */
 
     text-decoration: none;
-    color: white;
+    /* color: white; */
 }
 
 main {
