@@ -34,9 +34,15 @@ nav {
     padding: 15px;
 }
 
+nav a {
+    border-style: double;
+    border-color: transparent;
+}
+
 nav a:hover {
     border-style: double;
     color: var(--accentColor);
+    border-color: var(--accentColor);
 }
 
 a {
