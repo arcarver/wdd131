@@ -25,6 +25,7 @@ header {
     background-color: var(--mainColor);
     color: white;
     font: var(--secondaryFont);
+    text-align: center;
 }
 
 nav {
@@ -32,11 +33,13 @@ nav {
     justify-content: space-around;
     background-color: var(--secondaryColor);
     padding: 15px;
+    
 }
 
 nav a {
     border-style: double;
     border-color: transparent;
+    text-decoration: none;
 }
 
 nav a:hover {
@@ -114,4 +117,18 @@ figure {
     display: grid;
     grid-template-columns: repeat(4, 25%);
     grid-template-rows: 10% 40% 10% 40%;
+}
+/* ul{
+    border-color: var(--secondaryTextColor);
+    border-style: double;
+    height: auto;
+    width: auto;
+
+} */
+li{
+    align-items: center;
+    
+    text-decoration: underline;
+    padding: 5px;
+    
 }
