@@ -6,11 +6,11 @@
 --accentColor: #1a8fe3ff;
 --primaryFont: montserrat-fancy,Arial,
     sans-serif;
---secondaryFont: "Edu QLD Beginner-bold",
+--secondaryFont: "Edu QLD Beginner",
     Geneva,serif;
 }
 
-.edu-qld-beginner-bold {
+/* .edu-qld-beginner-bold {
     font-family: "Edu QLD Beginner", cursive;
     font-optical-sizing: auto;
     font-weight: 600;
@@ -20,13 +20,51 @@
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
-    font-style: normal; }
-
+    font-style: normal; } */
+header{
+    background-color: var(--mainColor);
+    color: white;
+    font: var(--secondaryFont);
+}
 nav{
     display: flex;
-    
+    justify-content: space-around;
+    background-color: var(--secondaryColor);
+    padding: 15px;
+}
+nav a:hover{
+    border-style: double; 
+    color:var(--accentColor);
+}
+a{
+    /* justify-items: space-around; */
 }
 
-a{
-    justify-items: space-around;
+main{
+    max-width: 800px;
+    display: grid;
+    grid-template-columns: 66% 34%;
+}
+section{
+    border-style: double;
+    border-color: var(--accentColor);
+    border-radius: 15px;
+    margin: 10px;
+}
+h2{
+    background-color: var(--accentColor);
+    padding: 5px;
+    margin: var--accentColor, 15px
+}
+figure{
+    
+}
+.self{
+    min-width: 90px;
+    max-width: 110px;
+}
+.flag{
+    min-width: 80px;
+    max-width: 120px;
+    height: auto;
 }
