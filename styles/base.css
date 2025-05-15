@@ -139,4 +139,5 @@ footer{
     border-color: var(--primary-text-color);
     border-radius: 15px;
     text-align: center;
+    background-color: var(--secondary-text-color);
 }
