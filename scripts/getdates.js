@@ -1,7 +1,7 @@
-const year = document.querySelector("#year");
-const today = new Date();
+const year = document.query-selector("#year");
+const today = new date();
 
-year.innerHTML = `${today.getFullYear()}`;
+year.inner-html = `${today.get-full-year()}`;
 
-const lastMod = document.querySelector("#last");
-lastMod.innerHTML = `${document.lastModified}`;
+const last-mod = document.query-selector("#last");
+last-mod.inner-html = `${document.last-modified}`;
