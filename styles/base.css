@@ -1,12 +1,12 @@
 :root {
-    --secondaryColor: #e6c229ff;
-    --secondaryTextColor: #f17105ff;
-    --mainColor: #d11149ff;
-    --primaryTextColor: #6610f2ff;
-    --accentColor: #1a8fe3ff;
-    --primaryFont: montserrat-fancy, Arial,
+    --secondary-color: #e6c229ff;
+    --secondary-text-color: #f17105ff;
+    --main-color: #d11149ff;
+    --primary-text-color: #6610f2ff;
+    --accent-color: #1a8fe3ff;
+    --primary-font: montserrat-fancy, Arial,
         sans-serif;
-    --secondaryFont: "Edu QLD Beginner",
+    --secondary-font: "Edu QLD Beginner",
         Geneva, serif;
     max-width: 800px;
 }
@@ -23,16 +23,16 @@
     font-weight: 400;
     font-style: normal; } */
 header {
-    background-color: var(--mainColor);
+    background-color: var(--main-color);
     color: white;
-    font: var(--secondaryFont);
+    font: var(--secondary-font);
     text-align: center;
 }
 
 nav {
     display: flex;
     justify-content: space-around;
-    background-color: var(--secondaryColor);
+    background-color: var(--secondary-color);
     padding: 15px;
     
 }
@@ -45,8 +45,8 @@ nav a {
 
 nav a:hover {
     border-style: double;
-    color: var(--accentColor);
-    border-color: var(--accentColor);
+    color: var(--accent-color);
+    border-color: var(--accent-color);
 }
 
 a {
@@ -61,14 +61,14 @@ main {
 
 section {
     border-style: double;
-    border-color: var(--accentColor);
+    border-color: var(--accent-color);
     border-radius: 15px;
     margin: 10px;
     height: auto;
 }
 
 h2 {
-    background-color: var(--accentColor);
+    background-color: var(--accent-color);
     margin: 15px;
     grid-column-start: 1;
     grid-column-end: 5;
@@ -121,7 +121,7 @@ figure {
     grid-template-rows: 10% 40% 10% 40%;
 }
 /* ul{
-    border-color: var(--secondaryTextColor);
+    border-color: var(--secondary-text-color);
     border-style: double;
     height: auto;
     width: auto;
@@ -136,7 +136,7 @@ li{
 }
 footer{
     border-style: double;
-    border-color: var(--primaryTextColor);
+    border-color: var(--primary-text-color);
     border-radius: 15px;
     text-align: center;
 }
