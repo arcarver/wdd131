@@ -69,7 +69,7 @@ section {
 
 h2 {
     background-color: var(--accentColor);
-    margin: var--accentColor, 15px;
+    margin: 15px;
     grid-column-start: 1;
     grid-column-end: 5;
     grid-row-start: 1;
