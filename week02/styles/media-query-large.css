@@ -2,13 +2,13 @@ body {
     font-family: 'Roboto', Arial, sans-serif;
 }
 @media screen and (min-width: 500px) {
-    header main footer {
-    /* max-width: 640px; */
+    header, main, footer {
+    max-width: 640px;
     text-align: center;
     margin: 1rem auto;
     border-style: 1px dotted #bbb;
     padding: 5px;
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
     }
     header{
         background-color: black;
@@ -24,5 +24,6 @@ body {
     section {
     padding: 2px;
     background-color: beige;
+    color:black
     }
 }
