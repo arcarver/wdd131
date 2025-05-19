@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         const deleteButton = document.createElement('button');
 
-        
+
         if (input.value.trim() !== '') {
             li.textContent = input.value;
             deleteButton.textContent = '❌';
@@ -17,14 +17,15 @@ document.addEventListener("DOMContentLoaded", function () {
                 list.removeChild(li);
                 input.focus();
             });
-        
-        
+
+
             li.append(deleteButton);
             list.append(li);
-        
-    
+
+
             input.value = '';
-            input.focus();
+            
         }
+        input.focus();
     });
 });
