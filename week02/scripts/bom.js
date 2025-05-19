@@ -9,15 +9,22 @@ document.addEventListener("DOMContentLoaded", function () {
 
         const deleteButton = document.createElement('button');
 
-        li.textContent = input.value;
-
-        deleteButton.textContent = '❌';
-        deleteButton.addEventListener('click', function () {
-            list.removeChild(li);
+        
+        if (input.value.trim() !== '') {
+            li.textContent = input.value;
+            deleteButton.textContent = '❌';
+            deleteButton.addEventListener('click', function () {
+                list.removeChild(li);
+                input.focus();
+            });
+        
+        
+            li.append(deleteButton);
+            list.append(li);
+        
+    
+            input.value = '';
             input.focus();
-        });
-
-        li.append(deleteButton);
-        list.append(li);
+        }
     });
 });
