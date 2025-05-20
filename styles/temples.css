@@ -13,6 +13,7 @@
 
 nav {
     display: flex;
+    align-content: center;
 
 }
 
