@@ -10,14 +10,26 @@
         Geneva, serif;
     max-width: 800px;
 }
-
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--accent-color);
+    padding: 10px;
+}
 nav {
     display: flex;
-    align-content: center;
+    justify-content: space-around;
+    
+    list-style-type: none;
 
+}
+a {
+    text-decoration: none;
+    margin-left: 15px;
 }
 
 nav a:hover{
+
 
 }
 
