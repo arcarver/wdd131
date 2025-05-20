@@ -1,0 +1,31 @@
+:root {
+--accent-color: #eac435ff;
+--font-color: #231f20ff;
+--secondary-accent-color: #e09891ff;
+--primary-color: #cb769eff;
+--secondary-color: #7d82b8ff;
+--primary-font: montserrat-fancy, Arial,
+        sans-serif;
+    --secondary-font: "Edu QLD Beginner",
+        Geneva, serif;
+    max-width: 800px;
+}
+
+nav {
+    display: flex;
+
+}
+
+nav a:hover{
+
+}
+
+main{
+    max-width: 800px;
+    margin:0 auto;
+}
+
+figure{
+    display: grid;
+    grid-template-columns: fr;
+}
