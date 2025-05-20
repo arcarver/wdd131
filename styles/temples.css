@@ -50,5 +50,5 @@ figure{
     display: grid;
     grid-template-columns: fr;
     min-width: 150px;
-    max-width: auto;
+    width: auto;
 }
