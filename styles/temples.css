@@ -18,10 +18,14 @@ header {
 }
 nav {
     display: flex;
-    justify-content: space-around;
+    /* justify-content: space-around; */
     
-    list-style-type: none;
+    
 
+}
+ul{
+    justify-content: space-around;
+    list-style-type: none;
 }
 a {
     text-decoration: none;
@@ -33,7 +37,25 @@ nav a:hover{
 
 
 }
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: #000;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+#menu::before {
+    content: "☰";
+}
 
+#menu.open::before {
+    content: "🔙";
+}
+.open a {
+    display: block;
+}
 main{
     max-width: 640px;
     margin: 1rem auto;
@@ -52,7 +74,7 @@ figure{
     display: grid;
     grid-template-columns: 1fr;
     min-width: 150px;
-    width: auto;
+    max-width: 300px;
     
 }
 img{
