@@ -6,10 +6,19 @@
    
     body{
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+
+        
 
     }
+    main{
+        grid-template-columns: 1fr 1fr 1fr;
+        
+    }
+    h2{
+        grid-row-start: 1;
+    }
     figure{
+        /* grid-row-start: 2; */
         min-width: 100px;
         max-width: 1fr;
         height: auto;

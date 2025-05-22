@@ -79,7 +79,7 @@ figure{
 }
 img{
     min-width: 150px;
-    max-width: 640px;
+    max-width:100%;
     border-color: var(--secondary-accent-color);
     border-style: dotted;
 }
