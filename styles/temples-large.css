@@ -27,7 +27,7 @@
     figure {
         /* grid-row-start: 2; */
         min-width: 100px;
-        max-width: 1fr;
+        
         height: auto;
     }
 
