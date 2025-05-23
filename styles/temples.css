@@ -98,3 +98,6 @@ img{
     border-color: var(--secondary-accent-color);
     border-style: dotted;
 }
+footer{
+    background-color: var(--accent-color);
+}
