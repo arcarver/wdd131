@@ -23,13 +23,14 @@ nav {
     
 
 }
-ul{
+div{
     justify-content: space-around;
-    list-style-type: none;
+    /* list-style-type: none; */
 }
 a {
     text-decoration: none;
     margin-left: 15px;
+    background: var(--secondary-accent-color);
 }
 
 nav a:hover{
@@ -40,19 +41,32 @@ nav a:hover{
 #menu {
     font-size: 1.5rem;
     border: 0;
-    background: none;
+   
     color: #000;
     position: absolute;
     right: 0;
     top: 0;
+    
 }
-#menu::before {
+#menu::after {
     content: "☰";
+    
 }
 
-#menu.open::before {
+#menu.open::after {
     content: "🔙";
+    background: var(--secondary-accent-color);
+    
 }
+.navigation {
+    display: none;
+}
+.navigation.open {
+    display: flex;
+    flex-direction: column;
+    
+}
+
 .open a {
     display: block;
 }
