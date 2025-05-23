@@ -42,11 +42,7 @@ nav a:hover{
     font-size: 1.5rem;
     border: 0;
    
-    color: #000;
-    position: absolute;
-    right: 0;
-    top: 0;
-    
+    color: #000;    
 }
 #menu::before {
     content: "☰";
