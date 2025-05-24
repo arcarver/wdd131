@@ -18,14 +18,3 @@ document.addEventListener("DOMContentLoaded", function () {
                 input.focus();
             });
 
-
-            li.append(deleteButton);
-            list.append(li);
-
-
-            input.value = '';
-            
-        }
-        input.focus();
-    });
-});
