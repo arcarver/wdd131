@@ -4,4 +4,9 @@
 --primary-color: #d8c0c6ff;
 --font-color: #343e3dff;
 --secondary-color: #d6e4efff;
+--primary-font: montserrat-fancy, Arial,
+        sans-serif;
+--secondary-font: "Edu QLD Beginner",
+        Geneva, serif;
+max-width: 1000px;
 }
