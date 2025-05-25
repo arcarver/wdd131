@@ -1,19 +1,23 @@
-@media screen and (min-width: 600px) {
-    picture {
+@media screen and (min-width: 550px) {
+    main {
         position: relative;
     }
 
     .data {
         position: absolute;
         /* display: left; */
-
+        top: 0px;
     }
 
     .weather {
         position: absolute;
-        /* display: right; */
+       bottom:  30px;
+       left: 350px;
+       width: 150px;
     }
-
+    .weather img{
+        width: 50px;
+    }
     ::weather {}
 
 
