@@ -32,32 +32,34 @@ picture{
     align-content: center;
     border-width: 2px;
     border-style: solid;
-    border-color:  --accent-two;
+    border-color:  var(--accent-two);
 }
 .data{
     background-color: var(--accent-two);
     padding: 15px;
     border-width: 2px;
     border-style: solid;
-    border-color: --accent-two;
+    border-color: var(--accent-one);
 }
 dl{
     display: inline-block;
     background-color: var(--accent-two);
     padding: 15px;
-    border: 2px solid --accent-one;
-
+    border-width: 2px;
+        border-style: solid;
+        border-color: var(--accent-one);
 }
 dt{
     float: left;
     color: var(--font-color);
     font-family: var(--primary-font)
-    
+       
 
 }
 dt::after {
     content: ":";
     align-items: center;
+    
 }
 dd{
     /* float: right; */
