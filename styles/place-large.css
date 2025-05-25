@@ -15,10 +15,11 @@
        left: 350px;
        width: 150px;
     }
-    .weather img{
-        width: 50px;
+   
+    
+    .weatherh2::after {
+        content: url('../images/cloud-drizzle.svg');
     }
-    ::weather {}
 
 
 }

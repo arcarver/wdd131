@@ -17,10 +17,12 @@ function calculateWindChillCelsius(temperatureCelsius, windSpeedKph) {
 const temperature = 17; // Celsius
 const windSpeed = 5; // km/h
 const windChill = calculateWindChillCelsius(temperature, windSpeed);
-
+let chillString;
 if (typeof windChill === 'number') {
-    console.log(`${windChill}°C`);
+    chillString = `${windChill}°C`;
 } else {
-    console.log(windChill);
+    chillString = windChill;
 }
- 
+
+const chill = document.querySelector("#windchill");
+chill.innerHTML = `${chillString}`;
