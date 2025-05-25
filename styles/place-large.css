@@ -1,19 +1,20 @@
 @media screen and (min-width: 600px) {
-    picture{
-        display: relative;
+    picture {
+        position: relative;
     }
-    .data{
-        display: absolute;
-        display: left;
+
+    .data {
+        position: absolute;
+        /* display: left; */
 
     }
-    .weather{
-        display: absolute;
-        display: right;
-    }
-    ::weather{
 
+    .weather {
+        position: absolute;
+        /* display: right; */
     }
+
+    ::weather {}
 
 
 }
