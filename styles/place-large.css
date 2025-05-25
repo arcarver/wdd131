@@ -14,12 +14,15 @@
        bottom:  30px;
        left: 350px;
        width: 150px;
+       
     }
    
     
     .weatherh2::after {
         content: url('../images/cloud-drizzle.svg');
     }
-
+    .weather img{
+        display: none;
+    }
 
 }

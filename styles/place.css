@@ -69,6 +69,8 @@ dd{
     border-width: 2px;
     border-style: solid;
     border-color: var(--accent-two);
+    background-color: var(--accent-one);
+    color: white;
 }
 .weather img{
     width: 100px;
