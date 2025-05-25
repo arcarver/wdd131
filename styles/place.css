@@ -9,4 +9,60 @@
 --secondary-font: "Edu QLD Beginner",
         Geneva, serif;
 max-width: 1000px;
+color: var(--font-color);
+}
+header{
+    background-color: var(--primary-color);
+   /* align-content: center; */
+    /* display: flex; */
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+h1{
+    /* align-items: center */
+    color: var(--font-color);
+   
+}
+main{
+    
+}
+picture{
+    width: 100%;
+    align-content: center;
+    border: 2px solid --accent-two;
+}
+data{
+    background-color: var(--accent-two);
+    padding: 15px;
+    border: 2px solid --accent-one;
+}
+dl{
+    display: inline-block;
+    background-color: var(--accent-two);
+    padding: 15px;
+    border: 2px solid --accent-one;
+
+}
+dt{
+    float: left;
+    color: var(--font-color);
+    font-family: var(--primary-font)
+    
+
+}
+dt::after {
+    content: ":";
+    align-items: center;
+}
+dd{
+    /* float: right; */
+    color: var(--font-color);
+}
+.weather img{
+    width: 100px;
+}
+footer{
+    background-color: var(--primary-color);
+    text-align: center;
 }
