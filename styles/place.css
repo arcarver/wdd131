@@ -30,12 +30,16 @@ main{
 picture{
     width: 100%;
     align-content: center;
-    border: 2px solid --accent-two;
+    border-width: 2px;
+    border-style: solid;
+    border-color:  --accent-two;
 }
-data{
+.data{
     background-color: var(--accent-two);
     padding: 15px;
-    border: 2px solid --accent-one;
+    border-width: 2px;
+    border-style: solid;
+    border-color: --accent-two;
 }
 dl{
     display: inline-block;
@@ -58,6 +62,11 @@ dt::after {
 dd{
     /* float: right; */
     color: var(--font-color);
+}
+.weather{
+    border-width: 2px;
+    border-style: solid;
+    border-color: --accent-two;
 }
 .weather img{
     width: 100px;
