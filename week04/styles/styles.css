@@ -1,0 +1,14 @@
+caption {
+    padding: 10px;
+    caption-side: bottom;
+    color: var(--back);
+    font-size: .85rem;
+}
+tr:first-child th,
+.highlight {
+    background-color: black;
+    color: white;
+}
+tbody tr:nth-child(odd) {
+    background-color: gainsboro;
+}
