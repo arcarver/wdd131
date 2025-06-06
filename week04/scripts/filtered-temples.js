@@ -111,10 +111,10 @@ const temples = [
 // }
 const templeCard = document.querySelector("#card");
 temples.map((value) => {
-    var newName = document.createElement("h1");
-    newElement.src = value.templeName;
+    var newName = document.createElement("h2");
+    newName.src = value.templeName;
     templeCard.appendChild(newName);
-})
+});
 const templeList = document.querySelector("#temple-list");
 temples.map((value) => {
     var newElement = document.createElement("img");
