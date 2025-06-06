@@ -1,102 +1,70 @@
-:root {
---accent-color: #eac435ff;
---font-color: #231f20ff;
---secondary-accent-color: #e09891ff;
---primary-color: #cb769eff;
---secondary-color: #7d82b8ff;
---primary-font: montserrat-fancy, Arial,
-sans-serif;
---secondary-font: "Edu QLD Beginner",
-Geneva, serif;
-max-width: 800px;
-}
-header {
-display: flex;
-justify-content: space-between;
-background-color: var(--accent-color);
-padding: 10px;
-}
-nav {
-display: flex;
-/* justify-content: space-around; */
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Picture Album</title>
+    <meta name="description"
+        content="Adjustable Size Temple Pictures for my Web Development Class. My name is Annie Carver. The purpose of this page is to show off my formatting for different size screens.">
+    <meta name="author" content="Annie Carver | WDD 131">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css">
+    <script src="scripts/temples.js" defer></script>
+</head>
 
+<body>
+    <header>
+        <h1>Temple Album</h1>
+        <nav id="menu">
+            <div class="navigation">
+                <a href="#">Home</a>
+                <a href="#">Old</a>
+                <a href="#">New</a>
+                <a href="#">Large</a>
+                <a href="#">Small</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <h2>Home</h2>
+        <figure><img src="images/bountiful-utah-temple.jpg" alt="Bountiful Utah Temple">
+            <figcaption>Bountiful Utah Temple</figcaption>
+        </figure>
+        <figure><img src="images/hawaii-temple.jpg" alt="Laie Hawaii Temple">
+            <figcaption>Laie Hawaii Temple</figcaption>
+        </figure>
+        <figure><img src="images/manila-philippines-temple.jpg" alt="Manila Philippines Temple">
+            <figcaption>Manila Philippines Temple</figcaption>
+        </figure>
+        <figure><img src="images/mount-timpanogos-temple.jpg" alt="Mount Timoanogos Utah Temple">
+            <figcaption>Mount Timoanogos Utah Temple</figcaption>
+        </figure>
+        <figure><img src="images/nauvoo-temple.jpg" alt="Nauvoo Illinois Temple">
+            <figcaption>Nauvoo Illinois Temple</figcaption>
+        </figure>
+        <figure><img src="images/pocatello-idaho-temple.jpg" alt="Pocatello Idaho Temple">
+            <figcaption>Pocatello Idaho Temple</figcaption>
+        </figure>
+        <figure><img src="images/slc-temple.jpg" alt="Salt Lake Temple">
+            <figcaption>Salt Lake Temple</figcaption>
+        </figure>
+        <figure><img src="images/twin-falls-temple.jpg" alt="Twin Falls Idaho Temple">
+            <figcaption>Twin Falls Idaho Temple</figcaption>
+        </figure>
+        <figure><img src="images/washington-dc-temple.jpg" alt="Washington DC Temple">
+            <figcaption>Washington DC Temple</figcaption>
+        </figure>
 
-}
-div{
-justify-content: space-around;
-/* list-style-type: none; */
-}
-a {
-text-decoration: none;
-margin-left: 15px;
-background: var(--secondary-accent-color);
-}
+    </main>
+    <footer>
+        <p>©<span id="year">Loading</span>🌳 Annie Carver 🌳 Washington</p>
+        <p>Last Modified <span id="last">loading</span></p>
 
-nav a:hover{
-color: var(--secondary-color);
+    </footer>
 
+</body>
 
-}
-#menu {
-font-size: 1.5rem;
-border: 0;
-
-color: #000;
-}
-#menu::before {
-content: "☰";
-
-}
-
-#menu.open {
-flex-direction: column;
-background: unset;
-}
-
-#menu.open::before {
-content: "🔙";
-background: var(--secondary-accent-color);
-text-align: right;
-}
-.navigation {
-display: none;
-}
-.navigation.open {
-display: flex;
-flex-direction: column;
-background: var(--secondary-accent-color);
-}
-
-.open a {
-display: block;
-}
-main{
-max-width: 640px;
-margin: 1rem auto;
-display: grid;
-justify-content: center;
-border-color: var(--secondary-color);
-border-style: solid;
-}
-
-h1{
-display: flex;
-justify-content: center;
-}
-
-figure{
-display: grid;
-grid-template-columns: 1fr;
-min-width: 150px;
-max-width: 300px;
-
-}
-img{
-min-width: 150px;
-max-width:100%;
-border-color: var(--secondary-accent-color);
-border-style: dotted;
-}
-footer{
-background-color: var(--accent-color);   }
+</html>
