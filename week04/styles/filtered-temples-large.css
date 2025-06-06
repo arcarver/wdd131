@@ -1,29 +1,49 @@
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 550px) {
     #menu {
         /*display: none; */
         /* hide hamburger button */
     }
 
     body {
-        display: grid;
-
-
-
+        /* display: grid; */
     }
 
     main {
-        grid-template-columns: 1fr 1fr 1fr;
+        /* grid-template-columns: 1fr 1fr 1fr; */
+        /* display: grid; */
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        /* grid-template-rows: repeat(auto-fill, minmax(1fr,200px)); */
 
     }
 
     h2 {
-        grid-row-start: 1;
+        /* grid-row-start: 1; */
         grid-column: 1/4;
         text-align: center;
         background-color: var(--secondary-color);
         color: white;
     }
-
+    #temple-list {
+        /* width: 33%;  */
+        /* flex-wrap: wrap;  */
+        /* display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); */
+     }
+     .templestyle{
+        background-color: var(--accent-color);
+    
+    
+        
+    }
+    #card {
+        background-color: var(--accent-color);
+        flex-wrap: wrap;
+    }
+    div{
+        display: flex;
+        max-width: 800px;
+        border: none;
+    }
     figure {
         /* grid-row-start: 2; */
         min-width: 100px;

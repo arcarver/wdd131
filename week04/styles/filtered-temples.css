@@ -21,15 +21,25 @@ nav {
     /* justify-content: space-around; */
 }
 #temple-list{
-    width: 300px;
+    max-width: 300px;
    
+}
+.templestyle{
+    background-color: var(--accent-color);
+
+
+    
+}
+#card {
+    background-color: var(--accent-color);
+    border: 2px solid var(--secondary-accent-color);
 }
 
 div{
-    justify-content: space-around;
-    flex-wrap: wrap;
+    /* justify-content: space-around; */
+    
 
-    background-color: var(--secondary-accent-color);
+    
     margin: 15px;
     padding: 10px;
     border: 2px dashed var(--secondary-color);
@@ -89,17 +99,17 @@ main{
 }
 
 h1{
-    display: flex;
-    justify-content: center;
+    /* display: flex; */
+    /* justify-content: center; */
 }
 
-figure{
+/* figure{
     display: grid;
     grid-template-columns: 1fr;
     min-width: 150px;
     max-width: 300px;
     
-}
+} */
 img{
     min-width: 150px;
     max-width:100%;

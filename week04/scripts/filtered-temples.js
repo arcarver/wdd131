@@ -71,7 +71,7 @@ const temples = [
             "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
     },
     {
-        templeName: "Montpelier Idaho Temple",
+        templeName: "Montpelier Idaho",
         location: "Montpelier, Idaho, United States",
         dedicated: "2026, early",
         area: 27000,
@@ -79,7 +79,7 @@ const temples = [
             "https://churchofjesuschristtemples.org/assets/img/temples/montpelier-idaho-temple/montpelier-idaho-temple-36129-main.jpg"
     },
     {
-        templeName: "Moses Lake Washington Temple",
+        templeName: "Moses Lake Washington",
         location: "Moses Lake, Washington, United States",
         dedicated: "2023, September, 17",
         area: 28933,
@@ -87,7 +87,7 @@ const temples = [
             "https://churchofjesuschristtemples.org/assets/img/temples/moses-lake-washington-temple/moses-lake-washington-temple-56955-thumb.jpg"
     },
     {
-        templeName: "Los Angeles California Temple",
+        templeName: "Los Angeles California",
         location: "Los Angeles, California, United States",
         dedicated: "1956, March, 11-14",
         area: 190614,
@@ -117,6 +117,7 @@ temples.map((value) => {
     templeImageElement.alt = value.templeName;
     templeImageElement.loading = "lazy";
     templeImageElement.className = 'templeStyle';
+    divForTempleInfo.id = 'card'
     const newName = document.createElement("h2");
     newName.textContent = value.templeName;
     const newLocation = document.createElement("h3");
