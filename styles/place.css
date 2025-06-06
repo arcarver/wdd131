@@ -34,6 +34,9 @@ picture{
     border-style: solid;
     border-color:  var(--accent-two);
 }
+img{
+    width: 100%;
+}
 .data{
     background-color: var(--accent-two);
     padding: 15px;

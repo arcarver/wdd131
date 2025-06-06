@@ -12,11 +12,13 @@
     .weather {
         position: absolute;
        bottom:  30px;
-       left: 350px;
+       right: 0;
        width: 150px;
        
     }
-   
+   img{
+    width: 100%;
+   }
     
     .weatherh2::after {
         content: url('../images/cloud-drizzle.svg');
