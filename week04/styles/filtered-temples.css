@@ -1,0 +1,103 @@
+:root {
+--accent-color: #eac435ff;
+--font-color: #231f20ff;
+--secondary-accent-color: #e09891ff;
+--primary-color: #cb769eff;
+--secondary-color: #7d82b8ff;
+--primary-font: montserrat-fancy, Arial,
+        sans-serif;
+    --secondary-font: "Edu QLD Beginner",
+        Geneva, serif;
+    max-width: 800px;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--accent-color);
+    padding: 10px;
+}
+nav {
+    display: flex;
+    /* justify-content: space-around; */
+    
+    
+
+}
+div{
+    justify-content: space-around;
+    /* list-style-type: none; */
+}
+a {
+    text-decoration: none;
+    margin-left: 15px;
+    background: var(--secondary-accent-color);
+}
+
+nav a:hover{
+    color: var(--secondary-color);
+
+
+}
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+   
+    color: #000;    
+}
+#menu::before {
+    content: "☰";
+    
+}
+
+#menu.open {
+    flex-direction: column;
+    background: unset;
+}
+
+#menu.open::before {
+    content: "🔙";
+    background: var(--secondary-accent-color);
+    text-align: right;
+}
+.navigation {
+    display: none;
+}
+.navigation.open {
+    display: flex;
+    flex-direction: column;
+    background: var(--secondary-accent-color);
+}
+
+.open a {
+    display: block;
+}
+main{
+    max-width: 640px;
+    margin: 1rem auto;
+    display: grid;
+    justify-content: center;
+    border-color: var(--secondary-color);
+    border-style: solid;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+}
+
+figure{
+    display: grid;
+    grid-template-columns: 1fr;
+    min-width: 150px;
+    max-width: 300px;
+    
+}
+img{
+    min-width: 150px;
+    max-width:100%;
+    border-color: var(--secondary-accent-color);
+    border-style: dotted;
+}
+footer{
+    background-color: var(--accent-color);
+}
