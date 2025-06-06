@@ -109,16 +109,16 @@ const temples = [
 //     newElement.className = 'templestyle'
 //     templeList.appendChild(newElement);
 // }
-const templeCard = document.querySelector("#card");
-temples.map((value) => {
-    var newName = document.createElement("h2");
-    newName.src = value.templeName;
-    templeCard.appendChild(newName);
-});
 const templeList = document.querySelector("#temple-list");
 temples.map((value) => {
-    var newElement = document.createElement("img");
-    newElement.src = value.imageUrl;
-    newElement.className = 'templestyle'
-    templeList.appendChild(newElement);
+    const divForTempleInfo = document.createElement("div");
+    const templeImageElement = document.createElement("img");
+    templeImageElement.src = value.imageUrl;
+    templeImageElement.className = 'templestyle';
+    var newName = document.createElement("h2");
+    newName.textContent = value.templeName;
+    
+    divForTempleInfo.appendChild(newName);
+    divForTempleInfo.appendChild(templeImageElement);
+    templeList.appendChild(divForTempleInfo);
 });
