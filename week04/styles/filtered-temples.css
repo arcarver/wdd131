@@ -21,11 +21,18 @@ nav {
     /* justify-content: space-around; */
 }
 #temple-list{
-    background-color: var(--secondary-accent-color);
-    margin: 15px;
+    width: 300px;
+   
 }
+
 div{
     justify-content: space-around;
+    flex-wrap: wrap;
+
+    background-color: var(--secondary-accent-color);
+    margin: 15px;
+    padding: 10px;
+    border: 2px dashed var(--secondary-color);
     /* list-style-type: none; */
 }
 a {
