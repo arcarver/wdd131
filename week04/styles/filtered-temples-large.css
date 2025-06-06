@@ -6,11 +6,13 @@
 
     body {
         /* display: grid; */
+        max-width: 800px;
     }
 
     main {
         /* grid-template-columns: 1fr 1fr 1fr; */
         /* display: grid; */
+        /* max-width: 800px; */
         grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
         /* grid-template-rows: repeat(auto-fill, minmax(1fr,200px)); */
 
@@ -22,8 +24,16 @@
         text-align: center;
         background-color: var(--secondary-color);
         color: white;
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
     #temple-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        /* max-height: 500px; */
+        /* grid-column: 1/4; */
+        /*  display: flex; */
+        /* flex-flow: row wrap;  */
         /* width: 33%;  */
         /* flex-wrap: wrap;  */
         /* display: grid;
@@ -31,11 +41,13 @@
      }
      .templestyle{
         background-color: var(--accent-color);
+        grid-column: 1/4;
     
     
         
     }
     #card {
+        display: flex;
         background-color: var(--accent-color);
         flex-wrap: wrap;
     }
@@ -44,12 +56,12 @@
         max-width: 800px;
         border: none;
     }
-    figure {
+    /* figure {
         /* grid-row-start: 2; */
         min-width: 100px;
         
         height: auto;
-    }
+    } */
 
     header {
         align-items: center;

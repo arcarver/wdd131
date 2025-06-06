@@ -117,5 +117,5 @@ img{
     border-style: dotted;
 }
 footer{
-    background-color: var(--accent-color);
+    background-color: var(--primary-color);
 }
