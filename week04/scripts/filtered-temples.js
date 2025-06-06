@@ -115,10 +115,18 @@ temples.map((value) => {
     const templeImageElement = document.createElement("img");
     templeImageElement.src = value.imageUrl;
     templeImageElement.className = 'templestyle';
-    var newName = document.createElement("h2");
+    const newName = document.createElement("h2");
     newName.textContent = value.templeName;
-    
+    const newLocation = document.createElement("h3");
+    newLocation.textContent = value.location;
+    const date = document.createElement("h4");
+    date.textContent = value.dedicated;
+    const totalArea = document.createElement("h4");
+    totalArea.textContent = value.area;
     divForTempleInfo.appendChild(newName);
+    divForTempleInfo.appendChild(newLocation);
+    divForTempleInfo.appendChild(date)
+    divForTempleInfo.appendChild(totalArea)
     divForTempleInfo.appendChild(templeImageElement);
     templeList.appendChild(divForTempleInfo);
 });
