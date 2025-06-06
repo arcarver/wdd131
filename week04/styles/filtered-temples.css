@@ -19,9 +19,10 @@ header {
 nav {
     display: flex;
     /* justify-content: space-around; */
-    
-    
-
+}
+#temple-list{
+    background-color: var(--secondary-accent-color);
+    margin: 15px;
 }
 div{
     justify-content: space-around;
