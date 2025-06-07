@@ -133,3 +133,9 @@ temples.map((value) => {
     divForTempleInfo.appendChild(templeImageElement);
     templeList.appendChild(divForTempleInfo);
 });
+
+const oldLink = document.querySelector("#old");
+oldLink.addEventListener("click", () => {
+    let oldLink = temples.filter(temple => date < 1900 ));
+    templeList(oldLink);
+});
