@@ -113,29 +113,36 @@ const templeList = document.querySelector("#temple-list");
 temples.map((value) => {
     const divForTempleInfo = document.createElement("div");
     const templeImageElement = document.createElement("img");
+    const newName = document.createElement("h2");
+    const newLocation = document.createElement("h3");
+    const date = document.createElement("h4");
+    const totalArea = document.createElement("h4");
+
     templeImageElement.src = value.imageUrl;
     templeImageElement.alt = value.templeName;
     templeImageElement.loading = "lazy";
     templeImageElement.className = 'templeStyle';
+    
     divForTempleInfo.id = 'card'
-    const newName = document.createElement("h2");
-    newName.textContent = value.templeName;
-    const newLocation = document.createElement("h3");
-    newLocation.textContent = value.location;
-    const date = document.createElement("h4");
-    date.textContent = value.dedicated;
-    const totalArea = document.createElement("h4");
-    totalArea.textContent = value.area;
     divForTempleInfo.appendChild(newName);
     divForTempleInfo.appendChild(newLocation);
-    divForTempleInfo.appendChild(date)
-    divForTempleInfo.appendChild(totalArea)
+    divForTempleInfo.appendChild(date);
+    divForTempleInfo.appendChild(totalArea);
     divForTempleInfo.appendChild(templeImageElement);
+
+    newName.textContent = value.templeName;
+    
+    newLocation.innerHTML = `<span class="label">Location:</span> ${value.location}`;
+    
+    date.innerHTML = `<span class="label">Dedicated:</span> ${value.dedicated}`;
+    
+    totalArea.innerHTML = value.area;
+    
     templeList.appendChild(divForTempleInfo);
 });
 
 const oldLink = document.querySelector("#old");
 oldLink.addEventListener("click", () => {
-    let oldLink = temples.filter(temple => date < 1900 );
-    templeList(oldLink);
-});
+    let oldLink = temples.filter(value => date < 1900 );
+    temples(oldLink);
+})();
