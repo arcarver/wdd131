@@ -110,7 +110,8 @@ const temples = [
 //     templeList.appendChild(newElement);
 // }
 const templeList = document.querySelector("#temple-list");
-temples.map((value) => {
+
+function makeCards(value) {
     const divForTempleInfo = document.createElement("div");
     const templeImageElement = document.createElement("img");
     const newName = document.createElement("h2");
@@ -122,7 +123,7 @@ temples.map((value) => {
     templeImageElement.alt = value.templeName;
     templeImageElement.loading = "lazy";
     templeImageElement.className = 'templeStyle';
-    
+
     divForTempleInfo.id = 'card'
     divForTempleInfo.appendChild(newName);
     divForTempleInfo.appendChild(newLocation);
@@ -131,18 +132,21 @@ temples.map((value) => {
     divForTempleInfo.appendChild(templeImageElement);
 
     newName.textContent = value.templeName;
-    
+
     newLocation.innerHTML = `<span class="label">Location:</span> ${value.location}`;
-    
     date.innerHTML = `<span class="label">Dedicated:</span> ${value.dedicated}`;
-    
     totalArea.innerHTML = `<span class="label">Size:</span> ${value.area} sq ft`;
-    
     templeList.appendChild(divForTempleInfo);
-});
+};
+
+temples.map(makeCards);
 
 const oldLink = document.querySelector("#old");
 oldLink.addEventListener("click", () => {
-    let oldLink = temples.filter(value => date < 1900 );
-    temples(oldLink);
+    document.querySelector("#temple-list").innerHTML = "";
+    const oldTemples = temples.filter((value) => {
+        const dateOfTemple = Number(value.dedicated.substring(0, 4));
+        return dateOfTemple < 1900;
+    });
+    oldTemples.map(makeCards);
 })();
