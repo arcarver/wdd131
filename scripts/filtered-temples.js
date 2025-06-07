@@ -136,6 +136,6 @@ temples.map((value) => {
 
 const oldLink = document.querySelector("#old");
 oldLink.addEventListener("click", () => {
-    let oldLink = temples.filter(temple => date < 1900 ));
+    let oldLink = temples.filter(temple => date < 1900 );
     templeList(oldLink);
 });
