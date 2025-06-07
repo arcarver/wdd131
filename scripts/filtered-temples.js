@@ -136,7 +136,7 @@ temples.map((value) => {
     
     date.innerHTML = `<span class="label">Dedicated:</span> ${value.dedicated}`;
     
-    totalArea.innerHTML = value.area;
+    totalArea.innerHTML = `<span class="label">Size:</span> ${value.area} sq ft`;
     
     templeList.appendChild(divForTempleInfo);
 });
