@@ -149,4 +149,48 @@ oldLink.addEventListener("click", () => {
         return dateOfTemple < 1900;
     });
     oldTemples.map(makeCards);
+})
+
+
+const newLink = document.querySelector("#new");
+newLink.addEventListener("click", () => {
+    document.querySelector("#temple-list").innerHTML = "";
+    const newTemples = temples.filter((value) => {
+        const dateOfTemple = Number(value.dedicated.substring(0, 4));
+        return dateOfTemple > 2000;
+    });
+    newTemples.map(makeCards);
+})
+
+
+const largeLink = document.querySelector("#large");
+largeLinkLink.addEventListener("click", () => {
+    document.querySelector("#temple-list").innerHTML = "";
+    const largeTemples = temples.filter((value) => {
+        const sizeOfTemple = Number(value.dedicated.substring(0, 4));
+        return sizeOfTemple > 90000;
+    });
+    largeTemples.map(makeCards);
 })();
+
+
+// const oldLink = document.querySelector("#small");
+// oldLink.addEventListener("click", () => {
+//     document.querySelector("#temple-list").innerHTML = "";
+//     const oldTemples = temples.filter((value) => {
+//         const dateOfTemple = Number(value.dedicated.substring(0, 4));
+//         return dateOfTemple < 1900;
+//     });
+//     oldTemples.map(makeCards);
+// })();
+
+
+// const oldLink = document.querySelector("#home");
+// oldLink.addEventListener("click", () => {
+//     document.querySelector("#temple-list").innerHTML = "";
+//     const oldTemples = temples.filter((value) => {
+//         const dateOfTemple = Number(value.dedicated.substring(0, 4));
+//         return dateOfTemple < 1900;
+//     });
+//     oldTemples.map(makeCards);
+// })();
