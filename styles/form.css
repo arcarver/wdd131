@@ -8,3 +8,16 @@
         Geneva, serif;
 
 }
+
+header, footer{
+    background-color: var(--secondary-color);
+    padding:10px;
+}
+fieldset{
+    border: 2px solid var(--primary-color);
+}
+label, div{
+    display: block;
+    padding-top: 2px;
+
+}
