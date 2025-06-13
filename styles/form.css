@@ -16,6 +16,7 @@ header, footer{
 }
 fieldset{
     border: 2px solid var(--primary-color);
+    font-family: var(--secondary-font);
 }
 label, div{
     display: block;
