@@ -3,9 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Product Review</title>
+    <meta name="description"
+        content="Here is my Product Review assignment for my Web Develpment Class. My name is Annie Carver. The purpose of this page is to show off my web development skills.">
+    <meta name="author" content="Annie Carver">
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="scripts/getdates.js" defer></script>
+
+
 </head>
 <body>
-    
+    <header>
+        <h1>Product Review Form</h1>
+    </header>   
+   <form method="get" action="">
+    <fieldset>
+       <label>Product Name<select name="products">
+        <option values="">Choose a Product &#9662;</option>
+       </select></label>
+       <div>Overall Rating</div>
+       <label><input type="checkbox" name="rating" value="one-star"> ☆</label>
+    <label><input type="checkbox" name="rating" value="this"> ☆☆</label>
+    <label><input type="checkbox" name="rating" value="three-star"> ☆☆☆</label>
+    <label><input type="checkbox" name="rating" value="four-star"> ☆☆☆☆</label>
+    <label><input type="checkbox" name="rating" value="five-star"> ☆☆☆☆☆</label>
+
+    </fieldset>
+   </form>
 </body>
 </html>
