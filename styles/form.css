@@ -21,3 +21,8 @@ label, div{
     padding-top: 2px;
 
 }
+#productName, #instalDate, #review, #name{
+    padding: 3px;
+    display: flex;
+    margin: 5px;
+}
