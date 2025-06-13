@@ -7,8 +7,8 @@
     <meta name="description"
         content="Here is my Product Review assignment for my Web Develpment Class. My name is Annie Carver. The purpose of this page is to show off my web development skills.">
     <meta name="author" content="Annie Carver">
-    <link rel="stylesheet" href="styles/styles.css">
-    <script src="scripts/getdates.js" defer></script>
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
 
 
 </head>
@@ -16,19 +16,41 @@
     <header>
         <h1>Product Review Form</h1>
     </header>   
-   <form method="get" action="">
+   <form method="get" action="review.html">
     <fieldset>
-       <label>Product Name<select name="products">
+       <label>Product Name<select name="products" id="productName" required>
         <option values="">Choose a Product &#9662;</option>
        </select></label>
-       <div>Overall Rating</div>
-       <label><input type="checkbox" name="rating" value="one-star"> ☆</label>
-    <label><input type="checkbox" name="rating" value="this"> ☆☆</label>
-    <label><input type="checkbox" name="rating" value="three-star"> ☆☆☆</label>
-    <label><input type="checkbox" name="rating" value="four-star"> ☆☆☆☆</label>
-    <label><input type="checkbox" name="rating" value="five-star"> ☆☆☆☆☆</label>
+       <div id="stars" required>Overall Rating
+       <label><input type="radio" name="rating" value="one-star"> ☆</label>
+        <label><input type="radio" name="rating" value="this"> ☆☆</label>
+        <label><input type="radio" name="rating" value="three-star"> ☆☆☆</label>
+        <label><input type="radio" name="rating" value="four-star"> ☆☆☆☆</label>
+        <label><input type="radio" name="rating" value="five-star"> ☆☆☆☆☆</label>
+</div>
+    <label>Date of Instalation<input type="date" name="instalDate" required></label>
+    </fieldset>
+    <fieldset>
+    <div>Which features did you find useful in the product?</div>
+    <div>(Check all that apply)</div>
+    <label><input type="checkbox" id="durability" name="durability" value="yes"> Durability</label>
+    <label><input type="checkbox" id="ease" name="ease" value="yes"> Ease of Use</label>
+    <><input type="checkbox" id="purformance" name="purformance" value="yes"> Performance/label>
+    <label><input type="checkbox" id="design" name="design" value="yes"> Design</label>
+    </fieldset>
+    <fieldset>
+        <label>Written Review(optional)<input type="textarea" id="review" name="review"></label>
+        <label>Your Name (Optional) <input type="text" name="name"></label>
+
+
 
     </fieldset>
+    <input type="submit" value="Post Review">
    </form>
+<footer>
+    <p>©<span id="year">Loading</span>🌳 Annie Carver 🌳 Washington</p>
+    <p>Last Modified <span id="last">loading</span></p>
+
+</footer>
 </body>
 </html>
