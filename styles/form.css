@@ -26,3 +26,6 @@ label, div{
     display: flex;
     margin: 5px;
 }
+input{
+    padding: 10px;
+}
