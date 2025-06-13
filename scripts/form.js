@@ -26,6 +26,17 @@ const products = [
     }
 ];
   
+const productsElement = document.querySelector("#productName");
+
+function makeProductSelection(value) {
+    const optionElement = document.createElement("option");
+
+    optionElement.value = value.id;
+    optionElement.innerHTML = value.name;
+
+    productsElement.appendChild(optionElement);
+}
+products.map(makeProductSelection);
 
 const year = document.querySelector("#year");
 const today = new Date();
