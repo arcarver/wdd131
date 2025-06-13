@@ -1,3 +1,4 @@
+// product options 
 const products = [
     {
         id: "fc-1888",
@@ -31,13 +32,30 @@ const productsElement = document.querySelector("#productName");
 function makeProductSelection(value) {
     const optionElement = document.createElement("option");
 
-    optionElement.value = value.id;
+    optionElement.innerHTML    = value.id;
     optionElement.innerHTML = value.name;
 
     productsElement.appendChild(optionElement);
 }
 products.map(makeProductSelection);
 
+
+// local storage and visit counter
+
+const showVisits = document.querySelector(".visits");
+
+let totalVisits = Number(window.localStorage.getItem("totalVisits-ls")) || 0;
+
+    if (totalVisits !== 0) {
+    showVisits.innerHTML = totalVisits;
+} else {
+    showVisits.innerHTML = "This is your first review. Thank you for reviewing our products!"
+}
+totalVisits++;   
+localStorage.setItem("totalVisit-ls", totalVisits); 
+
+    
+// Footer inforamtion
 const year = document.querySelector("#year");
 const today = new Date();
 year.innerHTML = `${today.getFullYear()}`;

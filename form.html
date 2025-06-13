@@ -22,13 +22,13 @@
        <label>Product Name<select name="products" id="productName" required>
         <option value="">Choose a Product &#9662;</option>
        </select></label>
-       <div id="stars" required>Overall Rating
-       <label><input type="radio" name="rating" value="one-star"> ☆</label>
-        <label><input type="radio" name="rating" value="this"> ☆☆</label>
-        <label><input type="radio" name="rating" value="three-star"> ☆☆☆</label>
-        <label><input type="radio" name="rating" value="four-star"> ☆☆☆☆</label>
-        <label><input type="radio" name="rating" value="five-star"> ☆☆☆☆☆</label>
-</div>
+       <div id="stars" >Overall Rating
+            <label><input type="radio" name="rating" value="one-star" required> ☆</label>
+            <label><input type="radio" name="rating" value="this" required> ☆☆</label>
+            <label><input type="radio" name="rating" value="three-star" required> ☆☆☆</label>
+            <label><input type="radio" name="rating" value="four-star" required> ☆☆☆☆</label>
+            <label><input type="radio" name="rating" value="five-star" required> ☆☆☆☆☆</label>
+        </div>
     <label>Date of Instalation<input type="date" id="instalDate" name="instalDate" required></label>
     </fieldset>
     <fieldset>
@@ -36,11 +36,11 @@
     <div>(Check all that apply)</div>
     <label><input type="checkbox" id="durability" name="durability" value="yes"> Durability</label>
     <label><input type="checkbox" id="ease" name="ease" value="yes"> Ease of Use</label>
-    <input type="checkbox" id="performance" name="performance" value="yes"> Performance</label>
+    <label><input type="checkbox" id="performance" name="performance" value="yes"> Performance</label>
     <label><input type="checkbox" id="design" name="design" value="yes"> Design</label>
     </fieldset>
     <fieldset>
-        <label>Written Review(optional)<input type="textarea" id="review" name="review"></label>
+        <label>Written Review(optional)<textarea id="review" name="review" rows="4" cols="55"></textarea></label>
         <label>Your Name (Optional) <input type="text" id="name" name="name"></label>
 
 
