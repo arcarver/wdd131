@@ -12,23 +12,30 @@
 header, footer{
     background-color: var(--secondary-color);
     padding:10px;
-    font-family: var(--primary-font);
+    font-family: var(--secondary-font);
 }
 fieldset{
     border: 2px solid var(--primary-color);
-    font-family: var(--secondary-font);
+    /* font-family: var(--primary-font); */
 }
 label, div{
     display: block;
     padding-top: 2px;
+    font-family: var(--secondary-font);
 
 }
 #productName, #instalDate, #review, #name{
     padding: 3px;
     display: flex;
     margin: 5px;
-    font-family: var(--secondary-font);
+    font-family: var(--primary-font);
 }
+
 input{
     padding: 10px;
+    margin: 10px;
+}
+#durability, #ease, #performance, #design{
+    margin: 5px;
+    /* font-family: var(--primary-font); */
 }
