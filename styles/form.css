@@ -44,7 +44,10 @@ div {
     margin: 5px;
     font-family: var(--primary-font);
 }
-
+textarea{
+    resize: horizontal;
+    width: 98%;
+}
 select {
     height: 30px;
     display: flex;
