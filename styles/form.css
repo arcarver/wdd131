@@ -1,41 +1,84 @@
-:root{
---secondary-accent-color: #e09891ff;
---primary-color: #cb769eff;
---secondary-color: #7d82b8ff;
---primary-font: montserrat-fancy, Arial,
+:root {
+    --secondary-accent-color: #e09891ff;
+    --primary-color: #cb769eff;
+    --secondary-color: #7d82b8ff;
+    --primary-font: montserrat-fancy, Arial,
         sans-serif;
---secondary-font: "Edu QLD Beginner",
+    --secondary-font: "Edu QLD Beginner",
         Geneva, serif;
-
 }
 
-header, footer{
+header,
+footer {
     background-color: var(--secondary-color);
-    padding:10px;
+    padding: 10px;
     font-family: var(--secondary-font);
 }
-fieldset{
-    border: 2px solid var(--primary-color);
-    /* font-family: var(--primary-font); */
+
+body {
+    font-size: 22px;
 }
-label, div{
+
+fieldset {
+    border: 2px solid var(--primary-color);
+}
+
+#stars:required {
+    border-left: 8px solid var(--secondary-color);
+}
+
+label,
+div {
     display: block;
     padding-top: 2px;
     font-family: var(--secondary-font);
 
 }
-#productName, #instalDate, #review, #name{
+
+#productName,
+#instalDate,
+#review,
+#name {
     padding: 3px;
     display: flex;
     margin: 5px;
     font-family: var(--primary-font);
 }
 
-input{
+select {
+    height: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+input {
     padding: 10px;
     margin: 10px;
+    height: 20px;
 }
-#durability, #ease, #performance, #design{
+
+#durability,
+#ease,
+#performance,
+#design {
     margin: 5px;
-    /* font-family: var(--primary-font); */
+}
+
+:required {
+    border-left: solid 8px var(--secondary-accent-color);
+}
+
+input[type="radio"]:required {
+    outline: var(--secondary-accent-color);
+    outline-offset: 3px;
+    outline-width: 2px;
+    outline-style: solid;
+}
+
+input[type="radio"]:required:valid {
+    outline: none;
+}
+
+:required:valid {
+    border-left: solid 8px var(--secondary-color);
 }
