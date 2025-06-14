@@ -54,7 +54,11 @@ select {
 input {
     padding: 10px;
     margin: 10px;
-    height: 20px;
+    height: auto;
+}
+#name{
+    padding-top: 4px;
+    padding-bottom: 4px;
 }
 
 #durability,
