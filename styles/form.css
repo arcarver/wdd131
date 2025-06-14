@@ -6,6 +6,7 @@
         sans-serif;
     --secondary-font: "Edu QLD Beginner",
         Geneva, serif;
+    min-width: 200px;
 }
 
 header,
