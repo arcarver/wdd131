@@ -102,3 +102,55 @@ function makeCards(value) {
     totalArea.innerHTML = `<span class="label">Size:</span> ${value.area} acres`;
     gardenList.appendChild(divForGardenInfo);
 };
+
+gardens.map(makeCards);
+
+const oldLink = document.querySelector("#old");
+oldLink.addEventListener("click", () => {
+    document.querySelector("#garden-list").innerHTML = "";
+    const oldGardens = gardens.filter((value) => {
+        const dateOfGarden = Number(value.dedicated.substring(0, 4));
+        return dateOfGarden< 1800;
+    });
+    oldGardens.map(makeCards);
+})
+
+
+const newLink = document.querySelector("#new");
+newLink.addEventListener("click", () => {
+    document.querySelector("#garden-list").innerHTML = "";
+    const newGardens = gardens.filter((value) => {
+        const dateOfGarden = Number(value.built.substring(0, 4));
+        return dateOfGarden > 1900;
+    });
+    newGardens.map(makeCards);
+})
+
+
+const largeLink = document.querySelector("#large");
+largeLink.addEventListener("click", () => {
+    document.querySelector("#garden-list").innerHTML = "";
+    const largeGardens = gardens.filter((value) => {
+        const sizeOfGarden = value.area;
+        return sizeOfGarden > 50;
+    });
+    largeGardens.map(makeCards);
+})
+
+
+const smallLink = document.querySelector("#small");
+smallLink.addEventListener("click", () => {
+    document.querySelector("#garden-list").innerHTML = "";
+    const smallGardens = gardens.filter((value) => {
+        const sizeOfGarden = value.area;
+        return sizeOfGarden < 10000;
+    });
+    smallGardens.map(makeCards);
+})
+
+
+const homeLink = document.querySelector("#home");
+homeLink.addEventListener("click", () => {
+    document.querySelector("#garden-list").innerHTML = "";
+    gardens.map(makeCards);
+})
