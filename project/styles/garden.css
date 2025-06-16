@@ -1,15 +1,16 @@
 :root{
---accent-font-color: #005377ff;
---primary-color: #06a77dff;
---accent-color-one: #d5c67aff;
---secondary-color: #89608eff;
---accent-color-two: #f1a208ff;
-max-width: 800px;
-padding: 10px;
---heading-font: montserrat-fancy, Arial,
-        sans-serif;
---paragraph-font: "Edu QLD Beginner",
-        Geneva, serif;
+    --accent-font-color: #005377ff;
+    --primary-color: #06a77dff;
+    --accent-color-one: #d5c67aff;
+    --secondary-color: #89608eff;
+    --accent-color-two: #f1a208ff;
+    max-width: 800px;
+    padding: 10px;
+    --heading-font: montserrat-fancy, Arial,
+            sans-serif;
+    --paragraph-font: "Edu QLD Beginner",
+            Geneva, serif;
+    
 }
 header{
     background-color: var(--accent-color-one);
@@ -19,6 +20,13 @@ header{
     border-style: double;
     padding: 10px;
     font-family: var(--heading-font);
+    justify-content: space-around;
+}
+nav a{
+    text-decoration: none;
+}
+.navigation a{
+    text-decoration: none;
 }
 div{
     background-color: var(--secondary-color);
