@@ -48,7 +48,7 @@ const gardens = [
         location: "Agra, India",
         built: 1631,
         area: 22,
-        imageURL: "images/taj-mahal",
+        imageURL: "images/taj-mahal.webp",
     },
     {
         gardenName: "Alfàbia",
@@ -62,14 +62,14 @@ const gardens = [
         location: "Giverny,France",
         built: 1883,
         area: 5,
-        imageURL: "images.monet.webp"
+        imageURL: "images/monet.webp"
     },
     {
         gardenName: "Butchart Garden",
         location: "Brentwood Bay, British Colombia",
         built: 1904,
         area: 55,
-        imageURL: "images/butchard.webp"
+        imageURL: "images/butchart.webp"
     },
 ];
 
@@ -83,24 +83,24 @@ function makeCards(value) {
     const date = document.createElement("h4");
     const totalArea = document.createElement("h4");
 
-    gardenImageElement.src = value.imageUrl;
+    gardenImageElement.src = value.imageURL;
     gardenImageElement.alt = value.gardenName;
     gardenImageElement.loading = "lazy";
     gardenImageElement.className = 'gardenStyle';
 
-    divForgardenInfo.id = 'card'
-    divForgardenInfo.appendChild(newName);
-    divForgardenInfo.appendChild(newLocation);
-    divForgardenInfo.appendChild(date);
-    divForgardenInfo.appendChild(totalArea);
-    divForgardenInfo.appendChild(gardenImageElement);
+    divForGardenInfo.id = 'card'
+    divForGardenInfo.appendChild(newName);
+    divForGardenInfo.appendChild(newLocation);
+    divForGardenInfo.appendChild(date);
+    divForGardenInfo.appendChild(totalArea);
+    divForGardenInfo.appendChild(gardenImageElement);
 
     newName.textContent = value.gardenName;
 
     newLocation.innerHTML = `<span class="label">Location:</span> ${value.location}`;
     date.innerHTML = `<span class="label">Built:</span> ${value.built}`;
     totalArea.innerHTML = `<span class="label">Size:</span> ${value.area} acres`;
-    gardenList.appendChild(divForGardenInfo);
+    gardensList.appendChild(divForGardenInfo);
 };
 
 gardens.map(makeCards);
@@ -110,7 +110,7 @@ oldLink.addEventListener("click", () => {
     document.querySelector("#garden-list").innerHTML = "";
     const oldGardens = gardens.filter((value) => {
         const dateOfGarden = Number(value.dedicated.substring(0, 4));
-        return dateOfGarden< 1800;
+        return dateOfGarden < 1800;
     });
     oldGardens.map(makeCards);
 })

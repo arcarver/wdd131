@@ -47,7 +47,7 @@ p{
     border-width: 2px;
     border-style: dotted;
 }
-#senarios{
+#scenarios{
     background-color: var(--accent-font-color);
     color: var(--accent-color-one);
     
@@ -111,6 +111,9 @@ h3{
 }
 img{
     grid-area:2/1/2/3;
+}
+.gardenStyle{
+    width: 200px;
 }
 figcaption{
     font-family: var(--paragraph-font);
