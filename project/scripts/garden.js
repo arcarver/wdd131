@@ -12,22 +12,22 @@ const gardens = [
         gardenName: "Gardens of Versailles",
         location: "Versailles, France",
         built: 1661,
-        area: 2000 acres,
-        imageURL: "https://www.churchofjesuschrist.org/imgs/62321966b50bc66a19fcc6cff584a45fee1eb9ea/full/1920%2C/0/default"
+        area: 2000,
+        imageURL: "images/versailles.webp",
     },
     {
-        gardenName: "Garden of Eden",
-        location: "Adamondioman, Missouri",
-        built: 7000 bc
-        area:
-        imageURL:
+        gardenName: "Central Park",
+        location: "New York City, New York.webp",
+        built: 1858,
+        area: 843,
+        imageURL: "images/central-park.webp"
     },
     {
-        gardenName: "Garden of Eden",
-        location: "Adamondioman, Missouri",
-        built: 7000 bc
-        area:
-        imageURL:
+        gardenName: "Shalamar Gardens",
+        location: "Lahore, Pakistan",
+        built: 1641,
+        area: 80,
+        imageURL: "images/shalimar.webp"
     },
     {
         gardenName: "Garden of Eden",
