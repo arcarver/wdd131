@@ -30,11 +30,18 @@ const gardens = [
         imageURL: "images/shalimar.webp"
     },
     {
-        gardenName: "Garden of Eden",
-        location: "Adamondioman, Missouri",
-        built: 7000 bc
-        area:
-        imageURL:
+        gardenName: "Chambord Castle",
+        location: "Chambord, France",
+        built: 1684
+        area: 16
+        imageURL: "images/chambord.webp"
+    },
+    {
+        gardenName: "Peterhof State Museum Reserve,
+        location: "St Petersburg, Russia",
+        built: 1705,
+        area: 2471,
+        imageURL: "images/peterhof.webp"
     },
     {
         gardenName: "Garden of Eden",
@@ -44,18 +51,11 @@ const gardens = [
         imageURL:
     },
     {
-        gardenName: "Garden of Eden",
-        location: "Adamondioman, Missouri",
-        built: 7000 bc
-        area:
-        imageURL:
-    },
-    {
-        gardenName: "Garden of Eden",
-        location: "Adamondioman, Missouri",
-        built: 7000 bc
-        area:
-        imageURL:
+        gardenName: "Alfàbia",
+        location: "Bunyola,  Spain",
+        built: 1200,
+        area: "unknown",
+        imageURL: ""
     },
     {
         gardenName: "Garden of Eden",
