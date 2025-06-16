@@ -32,12 +32,12 @@ const gardens = [
     {
         gardenName: "Chambord Castle",
         location: "Chambord, France",
-        built: 1684
-        area: 16
+        built: 1684,
+        area: 16,
         imageURL: "images/chambord.webp"
     },
     {
-        gardenName: "Peterhof State Museum Reserve,
+        gardenName: "Peterhof State Museum Reserve",
         location: "St Petersburg, Russia",
         built: 1705,
         area: 2471,
@@ -65,7 +65,7 @@ const gardens = [
         imageURL: "images.monet.webp"
     },
     {
-        gardenName: "Butchart Garden,
+        gardenName: "Butchart Garden",
         location: "Brentwood Bay, British Colombia",
         built: 1904,
         area: 55,
