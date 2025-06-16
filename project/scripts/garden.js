@@ -109,7 +109,7 @@ const oldLink = document.querySelector("#old");
 oldLink.addEventListener("click", () => {
     document.querySelector("#garden-list").innerHTML = "";
     const oldGardens = gardens.filter((value) => {
-        const dateOfGarden = Number(value.built.substring(0, 4));
+        const dateOfGarden = value.built;
         return dateOfGarden < 1750;
     });
     oldGardens.map(makeCards);
@@ -120,7 +120,7 @@ const newLink = document.querySelector("#new");
 newLink.addEventListener("click", () => {
     document.querySelector("#garden-list").innerHTML = "";
     const newGardens = gardens.filter((value) => {
-        const dateOfGarden = Number(value.built.substring(0, 4));
+        const dateOfGarden = value.built;
         return dateOfGarden > 1900;
     });
     newGardens.map(makeCards);
