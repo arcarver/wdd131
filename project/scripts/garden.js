@@ -52,14 +52,14 @@ const gardens = [
     },
     {
         gardenName: "Alfàbia",
-        location: "Bunyola,  Spain",
+        location: "Bunyola, Spain",
         built: 1200,
         area: "unknown",
         imageURL: "images/alfabia.webp"
     },
     {
         gardenName: "Monet's Garden",
-        location: "Giverny,France",
+        location: "Giverny, France",
         built: 1883,
         area: 5,
         imageURL: "images/monet.webp"
@@ -110,7 +110,7 @@ oldLink.addEventListener("click", () => {
     document.querySelector("#garden-list").innerHTML = "";
     const oldGardens = gardens.filter((value) => {
         const dateOfGarden = Number(value.dedicated.substring(0, 4));
-        return dateOfGarden < 1800;
+        return dateOfGarden < 1750;
     });
     oldGardens.map(makeCards);
 })
@@ -132,7 +132,7 @@ largeLink.addEventListener("click", () => {
     document.querySelector("#garden-list").innerHTML = "";
     const largeGardens = gardens.filter((value) => {
         const sizeOfGarden = value.area;
-        return sizeOfGarden > 50;
+        return sizeOfGarden > 500;
     });
     largeGardens.map(makeCards);
 })
@@ -143,13 +143,13 @@ smallLink.addEventListener("click", () => {
     document.querySelector("#garden-list").innerHTML = "";
     const smallGardens = gardens.filter((value) => {
         const sizeOfGarden = value.area;
-        return sizeOfGarden < 10000;
+        return sizeOfGarden < 25;
     });
     smallGardens.map(makeCards);
 })
 
 
-const homeLink = document.querySelector("#home");
+const allLink = document.querySelector("#all");
 homeLink.addEventListener("click", () => {
     document.querySelector("#garden-list").innerHTML = "";
     gardens.map(makeCards);
