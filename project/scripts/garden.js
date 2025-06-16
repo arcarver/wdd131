@@ -44,31 +44,31 @@ const gardens = [
         imageURL: "images/peterhof.webp"
     },
     {
-        gardenName: "Garden of Eden",
-        location: "Adamondioman, Missouri",
-        built: 7000 bc
-        area:
-        imageURL:
+        gardenName: "Taj Mahal",
+        location: "Agra, India",
+        built: 1631,
+        area: 22,
+        imageURL: "images/taj-mahal",
     },
     {
         gardenName: "Alfàbia",
         location: "Bunyola,  Spain",
         built: 1200,
         area: "unknown",
-        imageURL: ""
+        imageURL: "images/alfabia.webp"
     },
     {
-        gardenName: "Garden of Eden",
-        location: "Adamondioman, Missouri",
-        built: 7000 bc
-        area:
-        imageURL:
+        gardenName: "Monet's Garden",
+        location: "Giverny,France",
+        built: 1883,
+        area: 5,
+        imageURL: "images.monet.webp"
     },
     {
-        gardenName: "Garden of Eden",
-        location: "Adamondioman, Missouri",
-        built: 7000 bc
-        area:
-        imageURL:
+        gardenName: "Butchart Garden,
+        location: "Brentwood Bay, British Colombia",
+        built: 1904,
+        area: 55,
+        imageURL: "images/butchard.webp"
     }
 ];
