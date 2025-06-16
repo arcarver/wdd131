@@ -70,5 +70,35 @@ const gardens = [
         built: 1904,
         area: 55,
         imageURL: "images/butchard.webp"
-    }
+    },
 ];
+
+const gardensList = document.querySelector("#garden-list");
+
+function makeCards(value) {
+    const divForGardenInfo = document.createElement("div");
+    const gardenImageElement = document.createElement("img");
+    const newName = document.createElement("h2");
+    const newLocation = document.createElement("h3");
+    const date = document.createElement("h4");
+    const totalArea = document.createElement("h4");
+
+    gardenImageElement.src = value.imageUrl;
+    gardenImageElement.alt = value.gardenName;
+    gardenImageElement.loading = "lazy";
+    gardenImageElement.className = 'gardenStyle';
+
+    divForgardenInfo.id = 'card'
+    divForgardenInfo.appendChild(newName);
+    divForgardenInfo.appendChild(newLocation);
+    divForgardenInfo.appendChild(date);
+    divForgardenInfo.appendChild(totalArea);
+    divForgardenInfo.appendChild(gardenImageElement);
+
+    newName.textContent = value.gardenName;
+
+    newLocation.innerHTML = `<span class="label">Location:</span> ${value.location}`;
+    date.innerHTML = `<span class="label">Built:</span> ${value.built}`;
+    totalArea.innerHTML = `<span class="label">Size:</span> ${value.area} acres`;
+    gardenList.appendChild(divForGardenInfo);
+};
