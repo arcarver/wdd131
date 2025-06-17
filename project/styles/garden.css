@@ -126,7 +126,9 @@ h3 {
     text-align: left;
     font-size: large;
     
+    
 }
+
 #stars{
     display: flex;
     flex-direction: column;
@@ -146,10 +148,10 @@ label{
     display: flex;
     flex-direction: column;
 }
+
 #text label{
     display: flex;
     flex-direction: column;
-    
 }
 #text{
     padding: 15px;

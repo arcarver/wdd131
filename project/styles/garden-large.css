@@ -30,7 +30,7 @@
         background-color: var(--accent-color);
         height: 640px;
     }
-
+    
     #card h3 {
         height: unset;
     }
