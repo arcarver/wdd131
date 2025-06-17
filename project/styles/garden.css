@@ -216,9 +216,7 @@ a {
     grid-column: 1fr 1fr;
     
 } */
-img {
-    text-align: center;
-}
+
 
 .sort {
     display: grid;
