@@ -25,6 +25,10 @@ header {
     height: 150px;
 }
 
+body {
+    min-width: 400px;
+}
+
 nav a {
     text-decoration: none;
 }
@@ -238,10 +242,7 @@ figcaption {
 #garden-list {
     /* display: grid; */
     margin: auto;
-    width: fit-content;
     padding: 15px;
-    max-width: 500px;
-
 }
 
 #card {
