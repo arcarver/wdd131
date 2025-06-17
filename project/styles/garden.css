@@ -121,6 +121,7 @@ h3 {
 }
 #form{
     text-align: left;
+    font-size: large;
     
 }
 #stars{
@@ -128,9 +129,15 @@ h3 {
     flex-direction: column;
     padding-top: 10px;
 }
+#installDate{
+    flex-direction: column;
+}
 label{
     padding: 5px;
 }
+#projectName{
+    padding-bottom: 5px;
+    padding-top: 5px;
 
 #why{
     display: flex;
@@ -139,6 +146,7 @@ label{
 #text label{
     display: flex;
     flex-direction: column;
+    
 }
 #text{
     padding: 15px;
