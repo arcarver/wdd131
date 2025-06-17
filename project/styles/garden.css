@@ -33,6 +33,9 @@ body {
 #eden-picture {
     text-align: center;
 }
+img{
+    width: 95%;
+}
 
 nav a {
     text-decoration: none;
@@ -138,7 +141,7 @@ label{
 #projectName{
     padding-bottom: 5px;
     padding-top: 5px;
-
+}
 #why{
     display: flex;
     flex-direction: column;
@@ -216,7 +219,7 @@ figcaption {
 }
 .card img{
     /* width: 90%; */
-    max-width: 180px;
+    /* max-width: 180px; */
 }
 footer {
     background-color: var(--accent-font-color);
