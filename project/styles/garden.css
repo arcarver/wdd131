@@ -119,7 +119,30 @@ h3 {
     font-family: var(--heading-font);
     border: 2px dashed var(--primary-color);
 }
+#form{
+    text-align: left;
+    
+}
+#stars{
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+}
+label{
+    padding: 5px;
+}
 
+#why{
+    display: flex;
+    flex-direction: column;
+}
+#text label{
+    display: flex;
+    flex-direction: column;
+}
+#text{
+    padding: 15px;
+}
 #projects,
 #plants,
 #finished {
