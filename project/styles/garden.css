@@ -1,4 +1,4 @@
-:root{
+:root {
     --accent-font-color: #005377ff;
     --primary-color: #06a77dff;
     --accent-color-one: #d5c67aff;
@@ -7,12 +7,12 @@
     max-width: 800px;
     padding: 10px;
     --heading-font: montserrat-fancy, Arial,
-            sans-serif;
+        sans-serif;
     --paragraph-font: "Edu QLD Beginner",
-            Geneva, serif; 
+        Geneva, serif;
 }
 
-header{
+header {
     background-color: var(--accent-color-one);
     display: flex;
     align-items: center;
@@ -25,9 +25,10 @@ header{
     height: 150px;
 }
 
-nav a{
-    text-decoration: none;   
+nav a {
+    text-decoration: none;
 }
+
 nav a:hover {
     color: var(--secondary-color);
 }
@@ -68,33 +69,35 @@ nav a:hover {
     display: block;
 }
 
-h2{
-    justify-self: center; 
+h2 {
+    justify-self: center;
     border: 2px dotted var(--accent-color-two);
     padding: 15px 45px 15px 45px;
     width: auto;
     font-family: var(--heading-font);
 }
-.sort a{
+
+.sort a {
     text-decoration: none;
 }
 
-div{
+div {
     background-color: var(--secondary-color);
     margin-bottom: 10px;
 }
 
-p{
+p {
     background-color: white;
     border: 4px solid var(--accent-color-one);
     padding: 10px;
     margin: 10px;
     margin-bottom: 20px;
     color: black;
-    grid-row: 3/4 ;
+    grid-row: 3/4;
     grid-column: 1/6;
     font-family: var(--paragraph-font);
 }
+
 /* #name{
     background-color: var(--accent-color-two);
     border-color: var(--secondary-color);
@@ -120,12 +123,13 @@ p{
     height: 100%;
     font-family: var(--heading-font);
 } */
-ul{
+ul {
     background-color: whitesmoke;
     margin-bottom: 15px;
-   
+
 }
-h3{
+
+h3 {
     /* display: flex; */
     /* grid-template-rows: 200px;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -133,10 +137,13 @@ h3{
     padding: 5px;
     height: 100%;
     font-family: var(--heading-font);
-    border:2px dashed var(--primary-color);
+    border: 2px dashed var(--primary-color);
     /* background-color: whitesmoke; */
 }
-#projects, #plants, #finished, #resources{
+
+#projects,
+#plants,
+#finished {
     /* background-color: whitesmoke; */
     border: 2px solid var(--accent-font-color);
     list-style-position: inside;
@@ -144,6 +151,29 @@ h3{
     background-color: var(--accent-color-two);
     margin-bottom: 20px;
 }
+
+#resources {
+    border: 2px solid var(--accent-font-color);
+    list-style-position: inside;
+    font-family: var(--paragraph-font);
+    background-color: whitesmoke;
+    margin-bottom: 20px;
+}
+
+a {
+    color: var(--accent-font-color);
+}
+
+#resources a {
+    text-decoration: none;
+
+
+}
+
+#resources a:hover {
+    color: var(--secondary-color);
+}
+
 /* #color-one{
     background-color: var(--accent-color-one);
 }
@@ -178,37 +208,43 @@ h3{
     grid-column: 1fr 1fr;
     
 } */
-img{
+img {
     /* grid-area:2/1/2/3; */
     /* margin: 30px 10px 30px 0; */
 }
+
 .sort {
-   display: grid;
+    display: grid;
 }
-button{
+
+button {
     background-color: var(--accent-color-one);
     color: var(--accent-font-color);
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-row: 1;
     padding: 5px;
 }
-.gardenStyle{
+
+.gardenStyle {
     width: 200px;
 }
-figcaption{
+
+figcaption {
     font-family: var(--paragraph-font);
     padding-left: 5px;
 
 }
-#garden-list{
+
+#garden-list {
     /* display: grid; */
     margin: auto;
     width: fit-content;
     padding: 15px;
     max-width: 500px;
-    
+
 }
-#card{
+
+#card {
     /* width: 300px; */
     margin: auto;
     width: auto;
@@ -218,12 +254,14 @@ figcaption{
     border: 2px solid var(--accent-color-two);
 
 }
-footer{
+
+footer {
     background-color: var(--accent-font-color);
     color: var(--accent-color-one);
     padding: 10px;
 }
-footer p{
+
+footer p {
     background-color: var(--accent-font-color);
     color: var(--accent-color-one);
     font-family: var(--paragraph-font);
