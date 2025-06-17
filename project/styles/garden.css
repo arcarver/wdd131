@@ -106,17 +106,11 @@ p {
     font-family: var(--paragraph-font);
 }
 
-/* #name{
-    background-color: var(--accent-color-two);
-    border-color: var(--secondary-color);
-    border-width: 2px;
-    border-style: dotted;
-}
 #scenarios{
     background-color: var(--accent-font-color);
     color: var(--accent-color-one);
     
-} */
+} 
 /* .colors{
     display: grid;
     grid-template-rows: 1fr 200px 1;
