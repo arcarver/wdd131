@@ -108,14 +108,12 @@ p {
 
 #scenarios{
     background-color: var(--accent-font-color);
-    color: var(--accent-color-one);
-    
+    color: var(--accent-color-one); 
 } 
  
 ul {
     background-color: whitesmoke;
     margin-bottom: 15px;
-
 }
 
 h3 {
@@ -174,7 +172,6 @@ button {
 figcaption {
     font-family: var(--paragraph-font);
     padding-left: 5px;
-
 }
 
 #garden-list {
