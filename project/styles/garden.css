@@ -27,6 +27,7 @@ header {
 
 body {
     min-width: 400px;
+    text-align: center;
 }
 
 #eden-picture {
@@ -106,14 +107,10 @@ p {
     font-family: var(--paragraph-font);
 }
 
-#scenarios{
-    background-color: var(--accent-font-color);
-    color: var(--accent-color-one); 
-} 
- 
 ul {
     background-color: whitesmoke;
     margin-bottom: 15px;
+    text-align: left;
 }
 
 h3 {
