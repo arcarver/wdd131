@@ -68,10 +68,18 @@
             </header>
             <form method="get" action="suggestions.html">
                 <fieldset>
-                    <label>What project should I do next<select name="products" id="productName" required>
+                    <label>What project should I do next?<select name="project" id="projectName" required>
                             <option value="">Choose a Project &#9662;</option>
+                            <option value="North Fence">Rebuild North Fence</option>
+                            <option value="Blueberries">Plant and Protect Blueberries</option>
+                            <option value="Deck">Replace Deck</option>
+                            <option value="Walkway">Put in a front Walkway</option>
+                            <option value="Grape Trellis">Build a Grape Trellis</option>
+                            <option value="Patio">Replace front Patio</option>
+                            <option value="Herb Spiral">Install a Herb Spiral</option>
+                     
                         </select></label>
-                    <div id="stars">Overall Rating
+                    <div id="stars">Overall Importance
                         <label><input type="radio" name="rating" value="one-star" required> ☆</label>
                         <label><input type="radio" name="rating" value="two-star" required> ☆☆</label>
                         <label><input type="radio" name="rating" value="three-star" required> ☆☆☆</label>
@@ -81,15 +89,15 @@
                     <label>Project Start Date<input type="date" id="instalDate" name="instalDate" required></label>
                 </fieldset>
                 <fieldset>
-                    <div>Which features did you find useful in the product?</div>
+                    <div>Why should this project be done first?</div>
                     <div>(Check all that apply)</div>
-                    <label><input type="checkbox" id="durability" name="durability" value="yes"> Durability</label>
-                    <label><input type="checkbox" id="ease" name="ease" value="yes"> Ease of Use</label>
-                    <label><input type="checkbox" id="performance" name="performance" value="yes"> Performance</label>
-                    <label><input type="checkbox" id="design" name="design" value="yes"> Design</label>
+                    <label><input type="checkbox" id="safety" name="safety" value="yes"> Safety</label>
+                    <label><input type="checkbox" id="asthetics" name="asthetics" value="yes"> Asthetics/Beauty</label>
+                    <label><input type="checkbox" id="function" name="function" value="yes"> Helps yard function better</label>
+                    <label><input type="checkbox" id="awesome" name="awesome" value="yes"> Awesome</label>
                 </fieldset>
                 <fieldset>
-                    <label>Written Review(optional)<textarea id="review" name="review" rows="4"></textarea></label>
+                    <label>Other Project Suggestions(optional)<textarea id="review" name="review" rows="4"></textarea></label>
                     <label>Your Name (Optional) <input type="text" id="name" name="name"></label>
             
             
