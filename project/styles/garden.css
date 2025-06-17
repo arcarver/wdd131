@@ -136,7 +136,7 @@ h3{
     border:2px dashed var(--primary-color);
     /* background-color: whitesmoke; */
 }
-#projects, #plants, #finished, {
+#projects, #plants, #finished, #resources{
     /* background-color: whitesmoke; */
     border: 2px solid var(--accent-font-color);
     list-style-position: inside;
@@ -144,25 +144,6 @@ h3{
     background-color: var(--accent-color-two);
     margin-bottom: 20px;
 }
-#resources{
-    border: 2px solid var(--accent-font-color);
-    list-style-position: inside;
-    font-family: var(--paragraph-font);
-    margin-bottom: 20px;
-    background-color: whitesmoke;
-}
-
-a{
-    color: var(--accent-font-color);
-}
-
-#resources a{
-    text-decoration: none;
-   
-    
-}
-#resources a:hover {
-    color: var(--secondary-color);
 /* #color-one{
     background-color: var(--accent-color-one);
 }
