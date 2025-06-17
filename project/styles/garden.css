@@ -111,20 +111,7 @@ p {
     color: var(--accent-color-one);
     
 } 
-/* .colors{
-    display: grid;
-    grid-template-rows: 1fr 200px 1;
-    background-color: white;
-    border: 2px solid var(--accent-font-color);
-    margin-bottom: 10px;
-}   
-.colors h2 {
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-area: 1/1/2/6;
-    background-color: var(--secondary-color);
-    height: 100%;
-    font-family: var(--heading-font);
-} */
+ 
 ul {
     background-color: whitesmoke;
     margin-bottom: 15px;
@@ -132,21 +119,15 @@ ul {
 }
 
 h3 {
-    /* display: flex; */
-    /* grid-template-rows: 200px;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-row: 2/3; */
     padding: 5px;
     height: 100%;
     font-family: var(--heading-font);
     border: 2px dashed var(--primary-color);
-    /* background-color: whitesmoke; */
 }
 
 #projects,
 #plants,
 #finished {
-    /* background-color: whitesmoke; */
     border: 2px solid var(--accent-font-color);
     list-style-position: inside;
     font-family: var(--paragraph-font);
@@ -168,8 +149,6 @@ a {
 
 #resources a {
     text-decoration: none;
-
-
 }
 
 #resources a:hover {
