@@ -155,42 +155,6 @@ a {
     color: var(--secondary-color);
 }
 
-/* #color-one{
-    background-color: var(--accent-color-one);
-}
-#color-two{
-    background-color: var(--accent-color-two);
-}
-#color-three{
-    background-color: var(--accent-font-color);
-    color: white;
-}
-#color-four{
-    background-color: var(--primary-color);
-}
-#color-five{
-    background-color: var(--secondary-color);
-}
-#typography{
-    background-color: var(--accent-color-two);
-    border-color: var(--secondary-color);
-    border-width: 2px;
-    border-style: dotted;
-}
-#first-font{
-    font-family: var(--heading-font);
-}
-#second-font{
-    font-family: var(--paragraph-font);
-}
-#wireframe{
-    background-color: var(--primary-color);
-    display: grid;
-    grid-column: 1fr 1fr;
-    
-} */
-
-
 .sort {
     display: grid;
 }
@@ -214,20 +178,16 @@ figcaption {
 }
 
 #garden-list {
-    /* display: grid; */
     margin: auto;
     padding: 15px;
 }
 
 #card {
-    /* width: 300px; */
     margin: auto;
     width: auto;
-    /* padding: 15px; */
     padding: 10px;
     text-align: center;
     border: 2px solid var(--accent-color-two);
-
 }
 
 footer {
