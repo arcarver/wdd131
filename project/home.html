@@ -21,11 +21,13 @@
 <body>
     <header>
         <h1>My Garden</h1>
-        <nav>
-            <a href="#" id="home">Home</a>
-            <a href="#" id="links">Resources</a>
-            <a href="#" id="current">In Progress</a>
-            <a href="#" id="future">Future Projects</a>
+        <nav id="menu">
+            <div class="navigation">
+                <a href="#" id="home">Home</a>
+                <a href="#" id="links">Resources</a>
+                <a href="#" id="current">In Progress</a>
+                <a href="#" id="future">Future Projects</a>
+            </div>
         </nav>
     </header>
     <main>
@@ -35,17 +37,18 @@
                 <source srcset="images/garden-of-eden-clawson.webp" media="(min-width: 550px)">
                 <!-- <source srcset="images/hero-medium.webp" media="min-width: 550px"> -->
                 <img src="images/garden-of-eden-small.webp" alt="Garden of Eden" width="400" >    </picture>
-            <p>There are many beautiful gardens in the world. Central Park in New York, Golden Gate park in San Fransisco. One garden, the Hanging Garden was one of the seven wonders of the ancient world. The garden at versei. The garden of Eden. Gardens play a huge part of our lives. </p>
+                <figcaption>The Garden of Eden</figcaption>
+            <p>There are many beautiful gardens in the world. We can only dream of the Garden of Eden or the Hanging Garden of Babylon. Adam and Eve were kicked out of the Garden of Eden.  The Hanging Garden of Babylon was one of the seven wonders of the ancient world. There are so many gardens that we can see and experience.  Two of these gardens are Central Park in New York City or Golden Gate Park in San Fransisco. We can also travel all over the world looking at gardens. Gardens play a huge part in our lives. </p>
         </div>
-        <div class="navigation">
-            <a href="#" id="all">All</a>
-            <a href="#" id="old">Old</a>
-            <a href="#" id="new">New</a>
-            <a href="#" id="large">Large</a>
-            <a href="#" id="small">Small</a>
-        
-            <div id="garden-list">  
-            </div>
+        <div class="sort">
+            <button id="all">All</button>
+            <button id="old">Old</button>
+            <button id="new">New</button>
+            <button id="large">Large</button>
+            <button id="small">Small</button>
+        </div>
+        <div id="garden-list">  
+            
         </div>
 
         

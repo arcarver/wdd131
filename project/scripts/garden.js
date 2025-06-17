@@ -5,6 +5,14 @@ year.innerHTML = `${today.getFullYear()}`;
 const lastMod = document.querySelector("#last");
 lastMod.innerHTML = `${document.lastModified}`;
 
+// Hamburger
+const hamButton = document.querySelector("#menu");
+const navigation = document.querySelector(".navigation");
+
+hamButton.addEventListener("click", () => {
+    navigation.classList.toggle("open");
+    hamButton.classList.toggle("open");
+});
 
 // famous gardens through the ages sorted
 const gardens = [
@@ -17,7 +25,7 @@ const gardens = [
     },
     {
         gardenName: "Central Park",
-        location: "New York City, New York.webp",
+        location: "New York City, New York",
         built: 1858,
         area: 843,
         imageURL: "images/central-park.webp"
