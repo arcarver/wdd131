@@ -136,7 +136,7 @@ h3{
     border:2px dashed var(--primary-color);
     /* background-color: whitesmoke; */
 }
-#projects, #plants{
+#projects, #plants, #finished, #resources{
     /* background-color: whitesmoke; */
     border: 2px solid var(--accent-font-color);
     list-style-position: inside;
