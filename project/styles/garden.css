@@ -29,6 +29,10 @@ body {
     min-width: 400px;
 }
 
+#eden-picture {
+    text-align: center;
+}
+
 nav a {
     text-decoration: none;
 }
