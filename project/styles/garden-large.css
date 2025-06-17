@@ -5,28 +5,16 @@
 
     a {
         text-align: center;
-
     }
 
     header {
         width: auto;
-        /* display: flex;
-        align-items: space-around;
-        justify-content: space-between; */
     }
 
     #garden-list {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         max-width: 1000px;
-        /* max-height: 500px; */
-        /* grid-column: 1/4; */
-        /*  display: flex; */
-        /* flex-flow: row wrap;  */
-        /* width: 33%;  */
-        /* flex-wrap: wrap;  */
-        /* display: grid;
-                grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); */
     }
 
     .gardenstyle {
